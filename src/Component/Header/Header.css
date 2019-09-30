@@ -1,0 +1,10 @@
+.headertext {
+    display: flex;
+    position: absolute;
+    left: 50vw;
+    justify-content: space-between
+}
+
+.headertexts {
+    padding: 2vw
+}
