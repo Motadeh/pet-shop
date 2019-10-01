@@ -2,9 +2,18 @@
     display: flex;
     position: absolute;
     left: 50vw;
-    justify-content: space-between
+    color: #000000;
 }
 
 .headertexts {
     padding: 2vw
+}
+
+@media screen and (max-width: 1024px) {
+    .headertext {
+        display: flex;
+        position: absolute;
+        left: 25vw;
+        font-size: 2vw
+    }
 }

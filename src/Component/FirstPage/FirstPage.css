@@ -1,9 +1,37 @@
 .firstpage {
     background-image: url("../puppy-and-kitten-animal-wallpaper-hd-dog-photos-puppies-pets-lovely-widescreen-windows-wallpapers-of-dogs-mac-1805x1015.jpeg");
     min-height: 100vh;
-    /* min-width: 1024px; */
+    min-width: 100vw;
     /* background-size: 100vw; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
+
+.goodbye {
+    position: relative;
+    top: 40vh;
+    left: 18vw;
+    font-size: 3vw;
+    color: #FFFFFF
+}
+
+.hello {
+    position: relative;
+    top: 40vh;
+    left: 18vw;
+    font-size: 3vw;
+    color: #FFFFFF
+}
+
+/* Button {
+    position: relative;
+    top: 40vh;
+    left: -29.5vw;
+    font-size: 3vw;
+    color: #FFFFFF;
+    border : 2px;
+    border-color: black;
+    border-radius: 2px;
+    background-color: blueviolet
+} */

@@ -15,6 +15,25 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
+// interface State {
+//     name: string;
+//     email: string;
+//     company: string;
+//     phonenumber: number;
+//     message: string;
+// }
+
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (window.innerWidth > 767 || window.innerWidth > 767) {
+//     document.getElementById("headertext").style.position = "absolute";
+//   } 
+//   else {
+//     document.getElementById("headertext").style.position = "fixed";
+//   }
+// }
+
 export default function Header() {
     const classes = useStyles();
 
@@ -22,14 +41,14 @@ export default function Header() {
         <div className={classes.root}>
             <Grid container spacing={3}>
                 <Grid item xs={12}>
-                    <Paper elevation={0} className={classes.paper}>
-                        <div className='headertext'>
+                    {/* <Paper elevation={0} className={classes.paper}> */}
+                        <div className='headertext' id='headertext'>
                             <div className='headertexts'>PETS</div>
                             <div className='headertexts'>HOW IT WORKS</div>
                             <div className='headertexts'>LOCATE US</div>
                             <div className='headertexts'>MAKE PURCHASE</div>
                         </div>
-                    </Paper>
+                    {/* </Paper> */}
                 </Grid>
             </Grid>
         </div>
