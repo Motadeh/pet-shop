@@ -23,6 +23,43 @@
   color: #61dafb;
 }
 
+/* a:visited, */
+
+a:link, a:visited {
+    text-decoration: none;
+    padding-bottom: 1px;
+    color: inherit;
+    /* border-bottom: 1px solid #FFFFFF; */
+    -webkit-transition: border-bottom 0.2s,color 0.2s;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+
+a:active,
+a:hover{
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  -webkit-transition: border-bottom 0.2s,color 0.2s;
+  transition: border-bottom 0.2s,color 0.2s;
+}
+
+/* a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+} */
+
+/* a:visited {
+    text-decoration: none;
+    border-bottom: 0px
+} */
+
+
+.btn:link,
+.btn:visited{
+    border-bottom: 0px
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

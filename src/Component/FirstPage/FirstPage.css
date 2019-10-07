@@ -24,6 +24,25 @@
     color: #FFFFFF
 }
 
+.headertext {
+    display: flex;
+    position: absolute;
+    left: 50vw;
+    color: #FFFFFF;
+}
+
+.sticky {
+    display: flex;
+    position: fixed;
+    padding-left: 50vw;
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 2px 2px #efefef;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+    width: 100vw
+}
+
 /* Button {
     position: relative;
     top: 40vh;
@@ -35,3 +54,25 @@
     border-radius: 2px;
     background-color: blueviolet
 } */
+
+@media screen and (max-width: 1024px) {
+    .headertext {
+        display: flex;
+        position: absolute;
+        left: 30vw;
+        font-size: 2vw
+    }
+
+    .sticky {
+        display: flex;
+        position: fixed;
+        left: 30vw;
+        font-size: 2vw;
+        color: #000000;
+        background-color: rgba(255, 255, 255, 0.98);
+        -webkit-box-shadow: 0 2px 2px #efefef;
+        box-shadow: 0 2px 2px #efefef;
+        z-index: 9999;
+        width: 100vw
+    }
+}

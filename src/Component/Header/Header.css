@@ -1,6 +1,6 @@
-.headertext {
+#headertext {
     display: flex;
-    position: absolute;
+    position: fixed;
     left: 50vw;
     color: #000000;
 }
