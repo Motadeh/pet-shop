@@ -1,9 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import FirstPage from './Component/FirstPage/FirstPage';
-import AboutUs from './Component/AboutUs/AboutUs';
+import Pets from './Component/Pets/Pets';
+import PetGrid from './Component/PetGrid/PetGrid';
+import HowItWorks from './Component/HowItWorks/HowItWorks';
+import LocateUs from './Component/LocateUs/LocateUs';
+import MakePurchase from './Component/MakePurchase/MakePurchase';
 import Grid from '@material-ui/core/Grid';
-import Header from './Component/Header/Header';
 import scrollToComponent from 'react-scroll-to-component';
 
 
@@ -33,6 +36,33 @@ class App extends React.Component {
         });
     }
 
+    scrollWork = () => {
+        console.log('clicked')
+        // this.start.current.focus()
+        scrollToComponent(this.refs.work, {
+            align: 'top',
+            duration: 1000
+        });
+    }
+
+    scrollLocation = () => {
+        console.log('clicked')
+        // this.start.current.focus()
+        scrollToComponent(this.refs.location, {
+            align: 'top',
+            duration: 1000
+        });
+    }
+
+    scrollBuy = () => {
+        console.log('clicked')
+        // this.start.current.focus()
+        scrollToComponent(this.refs.buy, {
+            align: 'top',
+            duration: 1000
+        });
+    }
+
     render() {
         // const scrollStart = () => {
         //     scrollToComponent(this.refs.start, {
@@ -43,10 +73,19 @@ class App extends React.Component {
 
         return (
             <div className="App">
-                <FirstPage func={[this.scrollStart]} />
-                <AboutUs
-                    // {...props}
+                <FirstPage func={[this.scrollStart, this.scrollWork, this.scrollLocation, this.scrollBuy]} />
+                <Pets
                     ref='start'
+                />
+                <PetGrid />
+                <HowItWorks
+                    ref='work'
+                />
+                <LocateUs
+                    ref='location'
+                />
+                <MakePurchase
+                    ref='buy'
                 />
                 {/* <Header />
             <Header />

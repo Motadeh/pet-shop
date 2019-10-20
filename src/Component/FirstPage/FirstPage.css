@@ -1,5 +1,5 @@
 .firstpage {
-    background-image: url("../puppy-and-kitten-animal-wallpaper-hd-dog-photos-puppies-pets-lovely-widescreen-windows-wallpapers-of-dogs-mac-1805x1015.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../puppy-and-kitten-animal-wallpaper-hd-dog-photos-puppies-pets-lovely-widescreen-windows-wallpapers-of-dogs-mac-1805x1015.jpeg");
     min-height: 100vh;
     min-width: 100vw;
     /* background-size: 100vw; */
@@ -66,7 +66,8 @@
     .sticky {
         display: flex;
         position: fixed;
-        left: 30vw;
+        left: 0vw;
+        padding-left: 38vw;
         font-size: 2vw;
         color: #000000;
         background-color: rgba(255, 255, 255, 0.98);

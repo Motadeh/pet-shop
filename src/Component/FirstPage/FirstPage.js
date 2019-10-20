@@ -85,10 +85,16 @@ export default class FirstPage extends React.Component {
                             <Grid item xs={12} className='headertext2'>
                                 {/* <Paper elevation={0} className={classes.paper}> */}
                                 <div className={this.state.headerStyle}>
-                                    <div className='headertexts'>PETS</div>
-                                    <div className='headertexts'>HOW IT WORKS</div>
-                                    <div className='headertexts'>LOCATE US</div>
                                     <a href='#' onClick={() => this.props.func[0]()}>
+                                        <div className='headertexts'>PETS</div>
+                                    </a>
+                                    <a href='#' onClick={() => this.props.func[1]()}>
+                                        <div className='headertexts'>HOW IT WORKS</div>
+                                    </a>
+                                    <a href='#' onClick={() => this.props.func[2]()}>
+                                        <div className='headertexts'>LOCATE US</div>
+                                    </a>
+                                    <a href='#' onClick={() => this.props.func[3]()}>
                                         <div className='headertexts'>MAKE PURCHASE</div>
                                     </a>
                                 </div>

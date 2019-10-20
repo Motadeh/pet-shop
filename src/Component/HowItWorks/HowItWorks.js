@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import './AboutUs.css';
+import './HowItWorks.css';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -15,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
-export default class AboutUs extends React.Component {
+export default class HowItWorks extends React.Component {
 
     constructor(props) {
         super(props);
