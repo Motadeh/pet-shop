@@ -31,6 +31,18 @@
     color: #FFFFFF;
 }
 
+/* #headertext {
+    display: flex;
+    position: fixed;
+    left: 50vw;
+    color: #000000;
+} */
+
+.headertexts {
+    padding: 2vw
+}
+
+
 .sticky {
     display: flex;
     position: fixed;

@@ -1,0 +1,22 @@
+.footer {
+    background-color: #333;
+    padding: 50px;
+    padding-left: 10vw;
+    padding-right: 4vw;
+    color: #808080;
+    font-size: 1vw;
+}
+
+.footerlist ul, li{
+    list-style-type: none;
+    /* display: inline-block; */
+    float: left;
+}
+
+.footer-list {
+    margin-right: 10vw;
+}
+
+#footerlist {
+    padding: 8px
+}

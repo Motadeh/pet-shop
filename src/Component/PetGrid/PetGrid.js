@@ -3,6 +3,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import './PetGrid.css';
+import dogs from '../dogs.jpg'
+import cats from '../cats.jpeg'
+import rabbit from '../rabbit.jpeg'
+import fish from '../fish.jpeg'
+import hare from '../hare.jpeg'
+import parrot from '../parrot.jpeg'
+import cute from '../cute.jpeg'
+import monkey from '../monkey.jpeg'
+
+
+
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -32,11 +43,6 @@ export default class PetGrid extends React.Component {
 
     constructor(props) {
         super(props);
-        // this.state = {
-        //     headerStyle: 'headertext',
-        //     mobileIcon: 'ion-navicon-round',
-        //     showNav: true
-        // }
     }
 
     render() {
@@ -44,57 +50,62 @@ export default class PetGrid extends React.Component {
         // const [spacing, setSpacing] = React.useState(2);
 
         return (
-            <div
-                // className={classes.root}
-                style={{ overflowX: 'hidden' }}
-            >
-                <section className="section-meals">
-                    <ul className="meals-showcase clearfix">
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/1.jpg" alt="Korean bibimbap with egg and vegetables" />
-                            </figure>
-                        </li>
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/2.jpg" alt="Simple italian pizza with cherry tomatoes" />
-                            </figure>
-                        </li>
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/3.jpg" alt="Chicken breast steak with vegetables" />
-                            </figure>
-                        </li>
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/4.jpg" alt="Autumn pumpkin soup" />
-                            </figure>
-                        </li>
-                    </ul>
-                    <ul className="meals-showcase clearfix">
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/5.jpg" alt="Paleo beef steak with vegetables" />
-                            </figure>
-                        </li>
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/6.jpg" alt="Healthy baguette with egg and vegetables" />
-                            </figure>
-                        </li>
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/7.jpg" alt="Burger with cheddar and bacon" />
-                            </figure>
-                        </li>
-                        <li>
-                            <figure className="meal-photo">
-                                <img src="./assets/8.jpg" alt="Granola with cherries and strawberries" />
-                            </figure>
-                        </li>
-                    </ul>
-                </section>
-            </div>
+            // <section>
+            //     <div
+            //     // className={classes.root}
+            //     // style={{ overflowX: 'hidden' }}
+            //     >
+            //         <Grid container spacing={3}>
+
+                        <section className="section-meals">
+                            <ul className="meals-showcase clearfix">
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={dogs} alt="dogs" />
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={cats} alt="cats" />
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={rabbit} alt="rabbits" />
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={fish} alt="fish" />
+                                    </figure>
+                                </li>
+                            </ul>
+                            <ul className="meals-showcase clearfix">
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={hare} alt="hare" />
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={parrot} alt="parrot" />
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={cute} alt="cute" />
+                                    </figure>
+                                </li>
+                                <li>
+                                    <figure className="meal-photo">
+                                        <img src={monkey} alt="monkey" />
+                                    </figure>
+                                </li>
+                            </ul>
+                        </section>
+            //         </Grid>
+            //     </div>
+            // </section>
         );
     }
 }

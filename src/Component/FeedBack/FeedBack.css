@@ -1,0 +1,53 @@
+.feedback {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("../puppy-and-kitten-animal-wallpaper-hd-dog-photos-puppies-pets-lovely-widescreen-windows-wallpapers-of-dogs-mac-1805x1015.jpeg");
+    /* min-height: 100vh; */
+    min-width: 100vw;
+    /* background-size: 100vw; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.feedbacks {
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.feedbackinfo {
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+/* .infos {
+    padding: 1vw
+}
+
+.feedbackinfo {
+    text-align: left;
+}
+
+.infoheader {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+.infotext {
+    font-size: 1vw;
+} */
+
+.feedbacks {
+    font-size: 2vw;
+    padding-top: 6vw;
+    padding-bottom: 2vw;
+}
+
+.feedbackline {
+    width: 8vw;
+    margin-right: auto;
+    margin-left: auto;
+    color: #E67E22;
+    border-top: 2px solid #E67E22;
+}

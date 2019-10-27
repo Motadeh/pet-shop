@@ -76,7 +76,7 @@ export default class FirstPage extends React.Component {
         // }, [this.state.headerStyle]);
 
         return (
-            <Waypoint onLeave={staySticky} onEnter={stickSticky} topOffset='20px' >
+            <Waypoint onLeave={staySticky} onEnter={stickSticky} topOffset='5px' >
                 <div className="firstpage" style={{ overflowX: 'hidden' }}>
                     <div
                     // className={classes.root}

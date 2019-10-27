@@ -32,11 +32,6 @@ export default class Pets extends React.Component {
 
     constructor(props) {
         super(props);
-        // this.state = {
-        //     headerStyle: 'headertext',
-        //     mobileIcon: 'ion-navicon-round',
-        //     showNav: true
-        // }
     }
 
     render() {
@@ -44,11 +39,12 @@ export default class Pets extends React.Component {
         // const [spacing, setSpacing] = React.useState(2);
 
         return (
-            <div
-                // className={classes.root}
-                style={{ overflowX: 'hidden' }}
-            >
-                <Grid container spacing={3}>
+            <section>
+                {/* <div
+                    // className={classes.root}
+                    style={{ overflowX: 'hidden', flexGrow: 1 }}
+                > */}
+                <Grid container>
 
                     <Grid item xs={12}>
                         <Paper elevation={0}>
@@ -73,14 +69,14 @@ export default class Pets extends React.Component {
                     </Grid>
 
                     <Grid item xs={12}>
-                        <Grid container justify="center" align='center' spacing={8} style={{width: '68vw', marginLeft: 'auto', marginRight: 'auto'}}>
+                        <Grid container justify="center" align='center' spacing={6} style={{ width: '75vw', marginLeft: 'auto', marginRight: 'auto', marginBottom: '8vw' }}>
                             {[0, 1, 2, 3].map(value => (
                                 <Grid key={value} item>
                                     <Paper
                                         // className={classes.paper}
                                         style={{
-                                            width: '13vw',
-                                            height: '15vw'
+                                            width: '15vw',
+                                            height: '17vw'
                                         }}
                                     >
                                         {words[value]}
@@ -90,10 +86,11 @@ export default class Pets extends React.Component {
                         </Grid>
                     </Grid>
 
-                    
+
 
                 </Grid>
-            </div>
+                {/* </div> */}
+            </section>
         );
     }
 }

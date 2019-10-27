@@ -19,11 +19,6 @@ export default class AboutUs extends React.Component {
 
     constructor(props) {
         super(props);
-        // this.state = {
-        //     headerStyle: 'headertext',
-        //     mobileIcon: 'ion-navicon-round',
-        //     showNav: true
-        // }
     }
 
     render() {

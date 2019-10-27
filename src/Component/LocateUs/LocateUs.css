@@ -1,0 +1,38 @@
+.locateus, .howitworks1, .info {
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #808080;
+}
+
+.locateus {
+    font-size: 2vw;
+    padding-top: 6vw;
+    padding-bottom: 2vw;
+}
+
+.locateusline {
+    width: 8vw;
+    margin-right: auto;
+    margin-left: auto;
+    color: #E67E22;
+    border-top: 2px solid #E67E22;
+    margin-bottom: 20px
+}
+
+.locateuscities {
+
+}
+
+.locateuscities {
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+}
+
+.locateuscities.animated {
+    opacity: 1;
+    /* transform: translateY(-4em); */
+    transform: translateX(-4vw) ;
+    transition: transform .7s,
+                opacity .5s .2s ease-out;
+}

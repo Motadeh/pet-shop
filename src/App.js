@@ -1,16 +1,18 @@
 import React from 'react';
 import logo from './logo.svg';
 import FirstPage from './Component/FirstPage/FirstPage';
-import Pets from './Component/Pets/Pets';
+// import Pets from './Component/Pets/Pets';
 import PetGrid from './Component/PetGrid/PetGrid';
 import HowItWorks from './Component/HowItWorks/HowItWorks';
-import LocateUs from './Component/LocateUs/LocateUs';
-import MakePurchase from './Component/MakePurchase/MakePurchase';
-import Grid from '@material-ui/core/Grid';
+// import LocateUs from './Component/LocateUs/LocateUs';
+// import MakePurchase from './Component/MakePurchase/MakePurchase';
+// import Grid from '@material-ui/core/Grid';
 import scrollToComponent from 'react-scroll-to-component';
 
 
 import './App.css';
+// import FeedBack from './Component/FeedBack/FeedBack';
+// import Footer from './Component/Footer/Footer';
 
 class App extends React.Component {
 
@@ -72,21 +74,25 @@ class App extends React.Component {
         // }
 
         return (
-            <div className="App">
+            <div className="App"
+                // style={{ overflowX: "hidden" }}
+            >
                 <FirstPage func={[this.scrollStart, this.scrollWork, this.scrollLocation, this.scrollBuy]} />
-                <Pets
+                <HowItWorks
                     ref='start'
                 />
                 <PetGrid />
-                <HowItWorks
+                {/* <HowItWorks
                     ref='work'
-                />
-                <LocateUs
+                /> */}
+                {/* <LocateUs
                     ref='location'
-                />
-                <MakePurchase
+                /> */}
+                {/* <FeedBack /> */}
+                {/* <MakePurchase
                     ref='buy'
-                />
+                /> */}
+                {/* <Footer /> */}
                 {/* <Header />
             <Header />
             <Header />

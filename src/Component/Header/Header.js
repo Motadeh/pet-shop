@@ -81,7 +81,7 @@ export default function Header() {
                         {/* <Paper elevation={0} className={classes.paper}> */}
                         <div className='headertext' id='headertext'>
                             <div className='headertexts'>PETS</div>
-                            <div className='headertexts'>HOW IT WORKS</div>
+                            <div className='headertexts'>WHAT WE DO</div>
                             <div className='headertexts'>LOCATE US</div>
                             <div className='headertexts'>MAKE PURCHASE</div>
                         </div>
