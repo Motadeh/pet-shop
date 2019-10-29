@@ -79,12 +79,29 @@ export default function Header() {
                 <Grid container spacing={3}>
                     <Grid item xs={12}>
                         {/* <Paper elevation={0} className={classes.paper}> */}
-                        <div className='headertext' id='headertext'>
-                            <div className='headertexts'>PETS</div>
-                            <div className='headertexts'>WHAT WE DO</div>
-                            <div className='headertexts'>LOCATE US</div>
-                            <div className='headertexts'>MAKE PURCHASE</div>
-                        </div>
+                        <div className={this.state.headerStyle}>
+                                    <a href='#'
+                                        onClick={() => this.props.func[0]()}
+                                    >
+                                        <div className='headertexts'>HOME</div>
+                                    </a>
+                                    <a href='#' onClick={() => this.props.func[1]()}>
+                                        <div className='headertexts'>ABOUT US</div>
+                                    </a>
+                                    <a href='#'
+                                        onClick={() => this.props.func[2]()}
+                                    >
+                                        <div className='headertexts'>SERVICES</div>
+                                    </a>
+                                    <a href='#' onClick={() => this.props.func[4]()}>
+                                        <div className='headertexts'>LOCATE US</div>
+                                    </a>
+                                    <a href='#'
+                                        onClick={() => this.props.func[4]()}
+                                    >
+                                        <div className='headertexts'>CONTACT US</div>
+                                    </a>
+                                </div>
                         {/* </Paper> */}
                     </Grid>
                 </Grid>

@@ -51,8 +51,8 @@ section{
 }
 
 .app-screen{
-    width: 40%;
-    margin-top: 4vw;
+    width: 50%;
+    margin-top: 5vw;
 }
 
 .works-step {
@@ -111,6 +111,7 @@ section{
 
 .row {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+    padding-top: 2vw;
 }
 
 .row:before,
@@ -126,6 +127,69 @@ section{
 	display: block;
 	float:left;
 	margin: 1% 0 1% 1.6%;
+}
+
+.locateuscities0 {
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    
+}
+
+.locateuscities0.animated {
+    opacity: 1;
+    /* transform: translateY(-4em); */
+    transform: translateX(-4vw) ;
+    transition: transform .7s,
+                opacity .5s .2s ease-out;
+}
+
+.locateuscities1 {
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    
+}
+
+.locateuscities1.animated {
+    opacity: 1;
+    transform: translateX(-4vw) ;
+    transition: transform .7s .20s,
+                opacity .5s .2s ease-out;
+}
+
+.locateuscities2 {
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    
+}
+
+.locateuscities2.animated {
+    opacity: 1;
+    transform: translateX(-4vw) ;
+    transition: transform .7s .25s,
+                opacity .5s .2s ease-out;
+}
+
+/* .locateuscities3 {
+    opacity: 0;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    
+}
+
+.locateuscities3.animated {
+    opacity: 1;
+    transform: translateX(-4vw) ;
+    transition: transform .7s .30s,
+                opacity .5s .2s ease-out;
+} */
+
+.paper {
+    padding: 1vw;
+    width: 15vw;
+    height: auto
 }
 
 /* all browsers except IE6 and lower */
@@ -196,5 +260,10 @@ section{
     .steps-box {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .paper {
+        width: 50vw;
+        height: auto
     }
 }

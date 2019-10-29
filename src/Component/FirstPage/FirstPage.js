@@ -7,6 +7,7 @@ import './FirstPage.css';
 import { Button } from '@material-ui/core';
 import { Waypoint } from 'react-waypoint';
 // import React, { useState, useEffect } from "react";
+import { BrowserRouter, Link, Route, Switch } from "react-router-dom";
 
 const useStyles = (theme => ({
     root: {
@@ -76,7 +77,7 @@ export default class FirstPage extends React.Component {
         // }, [this.state.headerStyle]);
 
         return (
-            <Waypoint onLeave={staySticky} onEnter={stickSticky} topOffset='5px' >
+            <Waypoint onLeave={staySticky} onEnter={stickSticky} topOffset="50%">
                 <div className="firstpage" style={{ overflowX: 'hidden' }}>
                     <div
                     // className={classes.root}
@@ -85,17 +86,26 @@ export default class FirstPage extends React.Component {
                             <Grid item xs={12} className='headertext2'>
                                 {/* <Paper elevation={0} className={classes.paper}> */}
                                 <div className={this.state.headerStyle}>
-                                    <a href='#' onClick={() => this.props.func[0]()}>
-                                        <div className='headertexts'>PETS</div>
+                                    <a href='#'
+                                        onClick={() => this.props.func[0]()}
+                                    >
+                                        <div className='headertexts'>HOME</div>
                                     </a>
                                     <a href='#' onClick={() => this.props.func[1]()}>
-                                        <div className='headertexts'>HOW IT WORKS</div>
+                                        <div className='headertexts'>ABOUT US</div>
                                     </a>
-                                    <a href='#' onClick={() => this.props.func[2]()}>
+                                    <a href='#'
+                                        // onClick={() => this.props.func[2]()}
+                                    >
+                                        <div className='headertexts'>SERVICES</div>
+                                    </a>
+                                    <a href='#' onClick={() => this.props.func[4]()}>
                                         <div className='headertexts'>LOCATE US</div>
                                     </a>
-                                    <a href='#' onClick={() => this.props.func[3]()}>
-                                        <div className='headertexts'>MAKE PURCHASE</div>
+                                    <a href='#'
+                                        onClick={() => this.props.func[4]()}
+                                    >
+                                        <div className='headertexts'>CONTACT US</div>
                                     </a>
                                 </div>
                                 {/* </Paper> */}

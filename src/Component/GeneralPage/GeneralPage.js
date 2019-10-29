@@ -1,22 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
-import FirstPage from './Component/FirstPage/FirstPage';
+// import logo from './logo.svg';
+import FirstPage from '../FirstPage/FirstPage';
 // import Pets from './Component/Pets/Pets';
-import PetGrid from './Component/PetGrid/PetGrid';
-import HowItWorks from './Component/HowItWorks/HowItWorks';
-import LocateUs from './Component/LocateUs/LocateUs';
-import GeneralPage from './Component/GeneralPage/GeneralPage';
+import PetGrid from '../PetGrid/PetGrid';
+import HowItWorks from '../HowItWorks/HowItWorks';
+import LocateUs from '../LocateUs/LocateUs';
 // import MakePurchase from './Component/MakePurchase/MakePurchase';
 // import Grid from '@material-ui/core/Grid';
 import scrollToComponent from 'react-scroll-to-component';
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 
 
-import './App.css';
+import './GeneralPage.css';
 // import FeedBack from './Component/FeedBack/FeedBack';
-import Footer from './Component/Footer/Footer';
+import Footer from '../Footer/Footer';
 
-class App extends React.Component {
+class GeneralPage extends React.Component {
 
     // this.start = React.createRef();
 
@@ -88,16 +87,28 @@ class App extends React.Component {
             <div className="App"
             // style={{ overflowX: "hidden" }}
             >
-                <BrowserRouter>
+                {/* <BrowserRouter>
                     <Switch>
-                        <Route exact path="/">
-                            <GeneralPage />
-                        </Route>
+                        <Route exact path="/"> */}
+                            <FirstPage func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} ref='start' />
+                            <HowItWorks
+                                ref='aboutus'
+                            />
+                            <PetGrid
+                                ref='pet'
+                            />
+                            <LocateUs
+                                ref='location'
+                            />
+                            <Footer
+                                ref='buy'
+                            />
+                        {/* </Route>
                     </Switch>
-                </BrowserRouter>
+                </BrowserRouter> */}
             </div>
         );
     }
 }
 
-export default App;
+export default GeneralPage;

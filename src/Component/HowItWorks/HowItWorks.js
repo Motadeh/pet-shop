@@ -21,6 +21,33 @@ const useStyles = makeStyles(theme => ({
     },
 }));
 
+const words = [
+    <div className='infos'>
+        <div className='info infoheader'>Sales</div>
+        <div className='info infotext'>
+            We sell pets for those who would like to get new pets. All pets sold here are properly vaccinated and well fed
+        </div>
+    </div>,
+    <div className='infos'>
+        <div className='info infoheader'>Services</div>
+        <div className='info infotext'>
+            <div style={{textAlign: 'left', paddingBottom: '5px'}}>
+                We have various vetinary doctors and offer health care services for pets.
+            </div>
+            <div style={{textAlign: 'left'}}>
+                We offer home services such as dog walking, feeding, petsitting, pet grooming
+            </div>
+        </div>
+    </div>,
+    <div className='infos'>
+        <div className='info infoheader'>Pet Shop</div>
+        <div className='info infotext'>
+            We sell foods, accessories and toys for pets
+        </div>
+    </div>
+]
+
+
 export default class HowItWorks extends React.Component {
 
     constructor(props) {
@@ -44,11 +71,11 @@ export default class HowItWorks extends React.Component {
             // className={classes.root}
             // style={{ overflowX: 'hidden' }}
             >
-                <Grid container spacing={3}>
+                <Grid container>
                     <Grid item xs={12}>
                         <Paper elevation={0}>
                             <div className='howitworks'>
-                                HOW IT WORKS
+                                ABOUT US
                             </div>
                         </Paper>
                     </Grid>
@@ -60,29 +87,48 @@ export default class HowItWorks extends React.Component {
                     </Grid>
 
                     {/* <Grid item xs={4} className='row'> */}
-                        <div className='row'>
-                            <Waypoint onEnter={this.animite} bottomOffset="50%">
-                                <div>
-                                    <img src={appiPhone} alt="Omnifood Iphone app" className={`app-screen js--wp-2 ${this.state.animateStyle}`} />
-                                </div>
-                            </Waypoint>
-                            <div className="col span-1-of-2 steps-box">
-                                <div className="works-step">
-                                    <div>1</div>
-                                    <p>Choose the subscription plan that best fits your needs and sign up today</p>
-                                </div>
-                                <div className="works-step">
-                                    <div>2</div>
-                                    <p>Order your delicious meal using our mobile app or website. Or you can even call us!</p>
-                                </div>
-                                <div className="works-step">
-                                    <div>3</div>
-                                    <p>Enjoy your meal after less than 20 minutes. See you the next time!</p>
-                                </div>
-                                <a href="#" className="btn-app"><img src={apple} alt="App Store button" /></a>
-                                <a href="#" className="btn-app"><img src={android} alt="Play Store button" /></a>
+                    <div className='row'>
+                        <Waypoint onEnter={this.animite} bottomOffset="50%">
+                            <div>
+                                <img src={appiPhone} alt="Omnifood Iphone app" className={`app-screen js--wp-2 ${this.state.animateStyle}`} />
                             </div>
-                        </div>
+                        </Waypoint>
+                        <Waypoint onEnter={this.animite} bottomOffset="50%">
+                            <Grid item xs={12}>
+                                <Grid container justify="center" align='center' direction='column'
+                                    style={{
+                                        paddingLeft: '6vw',
+                                        // marginRight: '12.5vw',
+                                        // marginBottom: '8vw',
+                                        // marginTop: '3vw'
+                                    }}
+                                >
+                                    {[0, 1, 2].map(value => (
+                                        <Grid key={value} item className={`locateuscities${value} ${this.state.animateStyle}`}
+                                            style={{
+                                                // marginLeft: '10vw',
+                                                // marginRight: '12.5vw',
+                                                // marginBottom: '8vw',
+                                                marginTop: '1vw'
+                                            }}
+                                        >
+                                            <Paper
+                                                className='paper'
+                                            // style={{
+                                            //     padding: '2vw',
+                                            //     width: '30vw',
+                                            //     height: 'auto'
+                                            // }}
+                                            >
+                                                {words[value]}
+                                            </Paper>
+                                        </Grid>
+                                    ))}
+                                </Grid>
+                            </Grid>
+                        </Waypoint>
+
+                    </div>
                     {/* </Grid> */}
                 </Grid>
             </section>

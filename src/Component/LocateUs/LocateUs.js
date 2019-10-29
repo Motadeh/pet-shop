@@ -51,9 +51,9 @@ export default class LocateUs extends React.Component {
         return (
             <div
             // className={classes.root}
-            // style={{ overflowX: 'hidden' }}
+            style={{ paddingBottom: '50px' }}
             >
-                <Grid container spacing={3}>
+                <Grid container>
                     <Grid item xs={12}>
                         <Paper elevation={0}>
                             <div className='locateus'>
@@ -70,12 +70,28 @@ export default class LocateUs extends React.Component {
 
                     <Waypoint onEnter={this.animite} bottomOffset="50%">
                         <Grid item xs={12}>
-                            <Grid container justify="center" align='center' spacing={6} style={{ width: '75vw', marginLeft: '16.5vw', marginRight: '12.5vw', marginBottom: '8vw', marginTop: '3vw' }}>
+                            <Grid container justify="center" align='center'
+                                style={{
+                                    //     width: '75vw',
+                                    paddingLeft: '7vw',
+                                    //     marginRight: '12.5vw',
+                                    //     marginBottom: '8vw',
+                                    //     marginTop: '3vw'
+                                }}
+                            >
                                 {[0, 1, 2, 3].map(value => (
-                                    <Grid key={value} item className={`locateuscities ${this.state.animateStyle}`}>
+                                    <Grid key={value} item className={`locateuscities ${this.state.animateStyle}`}
+                                        style={{
+                                            marginLeft: '1vw',
+                                            // marginRight: '12.5vw',
+                                            // marginBottom: '8vw',
+                                            // marginTop: '1vw'
+                                        }}
+                                    >
                                         <Paper
                                             // className={classes.paper}
                                             style={{
+                                                padding: '1vw',
                                                 width: '15vw',
                                                 height: '17vw'
                                             }}
