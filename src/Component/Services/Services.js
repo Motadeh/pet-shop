@@ -3,6 +3,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import './Services.css';
+import { BrowserRouter, Link, NavLink, Route, Switch } from "react-router-dom";
+
+const styles = {
+    link: {
+        textDecoration: "none"
+    }
+};
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -32,57 +39,131 @@ export default class Services extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            headerStyle: 'headertext',
+            mobileIcon: 'ion-navicon-round',
+            showNav: true
+        }
     }
+
 
     render() {
         // const { classes } = useStyles();
         // const [spacing, setSpacing] = React.useState(2);
 
+        const stickSticky = () => {
+            this.setState({ headerStyle: 'headertext' });
+        }
+
+        const staySticky = (obj) => {
+            this.setState({ headerStyle: 'sticky' }, console.log(this.state.headerStyle));
+            console.log('gbese')
+        }
+
         return (
-            <section>
+            <div className='services'>
                 {/* <div
                     // className={classes.root}
                     style={{ overflowX: 'hidden', flexGrow: 1 }}
                 > */}
                 <Grid container>
 
-                    <Grid item xs={12}>
+                    <Grid container spacing={3}>
+                        <Grid item xs={12} className='headertext2'>
+                            {/* <Paper elevation={0} className={classes.paper}> */}
+                            <div className={this.state.headerStyle}>
+                                <a href='#'
+                                    onClick={() => this.props.func[0]()}
+                                >
+                                    <div className='headertexts'>HOME</div>
+                                </a>
+                                <a href='#' onClick={() => this.props.func[1]()}>
+                                    <div className='headertexts'>ABOUT US</div>
+                                </a>
+                                {/* <a href='#'
+                                        // onClick={() => this.props.func[2]()}
+                                    > */}
+                                <Link to="/moyin/services" style={styles.link}>
+                                    <div className='headertexts'>SERVICES</div>
+                                </Link>
+                                {/* <div className='headertexts'>SERVICES</div> */}
+                                {/* </a> */}
+                                <a href='#' onClick={() => this.props.func[4]()}>
+                                    <div className='headertexts'>LOCATE US</div>
+                                </a>
+                                {/* <a href='#'
+                                    onClick={() => this.props.func[4]()}
+                                >
+                                    <div className='headertexts'>CONTACT US</div>
+                                </a> */}
+                                {/* <NavLink
+                                    to="/moyin"
+                                    style={styles.link}
+                                    isActive={(match, location) => {
+                                        if (!match) {
+                                            this.props.func[4]()
+                                        }
+                                    }}
+                                >
+                                    <div className='headertexts'>CONTACT US</div>
+                                </NavLink> */}
+                                <Link
+                                    to="/moyin#contact"
+                                    style={styles.link}
+                                    // isActive={(match, location) => {
+                                    //     if (!match) {
+                                    //         this.props.func[4]()
+                                    //     }
+                                    // }}
+                                >
+                                    <div className='headertexts'>CONTACT US</div>
+                                </Link>
+                            </div>
+                            {/* </Paper> */}
+                        </Grid>
+                    </Grid>
+
+                    <Grid item xs={12} className='services1'>
                         <Paper elevation={0}>
-                            <div className='getpet'>
+                            <div>
                                 GET YOUR LOVELY PETS
                             </div>
                         </Paper>
                     </Grid>
 
-                    <Grid item xs={12}>
+                    {/* <Grid item xs={12}>
                         <Paper elevation={0}>
                             <div className='getpetline' />
                         </Paper>
-                    </Grid>
+                    </Grid> */}
 
                     <Grid item xs={12}>
                         <Paper elevation={0}>
-                            <div className='getpet1'>
-                                Hello, we're Moyin Pet-shop, your new go to shop for your lovely little pets. We know you love pets and we're here to provide you with variety of pets you would love. Do take a tour around, you'll love it
+                            <div className='services2'>
+                                Hello, we're Moyin Pet-shop, your new go to shop for your lovely little pets.
+                                We know you love pets and we're here to provide you with variety of pets you would love.
+                                Do take a tour around, you'll love it
                             </div>
                         </Paper>
                     </Grid>
 
                     <Grid item xs={12}>
                         <Grid container justify="center" align='center' spacing={6} style={{ width: '75vw', marginLeft: 'auto', marginRight: 'auto', marginBottom: '8vw' }}>
-                            {[0, 1, 2, 3].map(value => (
-                                <Grid key={value} item>
-                                    <Paper
-                                        // className={classes.paper}
-                                        style={{
-                                            width: '15vw',
-                                            height: '17vw'
-                                        }}
-                                    >
-                                        {words[value]}
-                                    </Paper>
-                                </Grid>
-                            ))}
+                            <div className='services3'>
+                                {[0, 1, 2, 3].map(value => (
+                                    <Grid key={value} item>
+                                        <Paper
+                                            // className={classes.paper}
+                                            style={{
+                                                width: '15vw',
+                                                height: '17vw'
+                                            }}
+                                        >
+                                            {words[value]}
+                                        </Paper>
+                                    </Grid>
+                                ))}
+                            </div>
                         </Grid>
                     </Grid>
 
@@ -90,7 +171,7 @@ export default class Services extends React.Component {
 
                 </Grid>
                 {/* </div> */}
-            </section>
+            </div>
         );
     }
 }

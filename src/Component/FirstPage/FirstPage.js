@@ -20,6 +20,12 @@ const useStyles = (theme => ({
     },
 }));
 
+const styles = {
+    link: {
+        textDecoration: "none"
+    }
+};
+
 
 // const [values, setValues] = React.useState({
 //     headerStyle: 'headertext',
@@ -94,15 +100,18 @@ export default class FirstPage extends React.Component {
                                     <a href='#' onClick={() => this.props.func[1]()}>
                                         <div className='headertexts'>ABOUT US</div>
                                     </a>
-                                    <a href='#'
+                                    {/* <a href='#'
                                         // onClick={() => this.props.func[2]()}
-                                    >
+                                    > */}
+                                    <Link to="/moyin/services" style={styles.link}>
                                         <div className='headertexts'>SERVICES</div>
-                                    </a>
+                                    </Link>
+                                    {/* <div className='headertexts'>SERVICES</div> */}
+                                    {/* </a> */}
                                     <a href='#' onClick={() => this.props.func[4]()}>
                                         <div className='headertexts'>LOCATE US</div>
                                     </a>
-                                    <a href='#'
+                                    <a href='#contact'
                                         onClick={() => this.props.func[4]()}
                                     >
                                         <div className='headertexts'>CONTACT US</div>
@@ -114,7 +123,7 @@ export default class FirstPage extends React.Component {
                         <Grid container>
                             <div className='goodbye'>
                                 GOODBYE LONLINESS
-                    </div>
+                            </div>
                         </Grid>
                         <Grid container>
                             <div className='hello'>

@@ -93,7 +93,8 @@ export default class LocateUs extends React.Component {
                                             style={{
                                                 padding: '1vw',
                                                 width: '15vw',
-                                                height: '17vw'
+                                                height: '10vw',
+                                                fontSize: '1vw'
                                             }}
                                         >
                                             {words[value]}

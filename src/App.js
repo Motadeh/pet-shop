@@ -4,7 +4,7 @@ import FirstPage from './Component/FirstPage/FirstPage';
 // import Pets from './Component/Pets/Pets';
 import PetGrid from './Component/PetGrid/PetGrid';
 import HowItWorks from './Component/HowItWorks/HowItWorks';
-import LocateUs from './Component/LocateUs/LocateUs';
+import Services from './Component/Services/Services';
 import GeneralPage from './Component/GeneralPage/GeneralPage';
 // import MakePurchase from './Component/MakePurchase/MakePurchase';
 // import Grid from '@material-ui/core/Grid';
@@ -91,7 +91,13 @@ class App extends React.Component {
                 <BrowserRouter>
                     <Switch>
                         <Route exact path="/">
+                            <Redirect to="/moyin" />
+                        </Route>
+                        <Route exact path="/moyin">
                             <GeneralPage />
+                        </Route>
+                        <Route exact path="/moyin/services">
+                            <Services func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} />
                         </Route>
                     </Switch>
                 </BrowserRouter>

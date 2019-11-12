@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import FirstPage from '../FirstPage/FirstPage';
-// import Pets from './Component/Pets/Pets';
+import Services from '../Services/Services';
 import PetGrid from '../PetGrid/PetGrid';
 import HowItWorks from '../HowItWorks/HowItWorks';
 import LocateUs from '../LocateUs/LocateUs';
@@ -90,20 +90,23 @@ class GeneralPage extends React.Component {
                 {/* <BrowserRouter>
                     <Switch>
                         <Route exact path="/"> */}
-                            <FirstPage func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} ref='start' />
-                            <HowItWorks
-                                ref='aboutus'
-                            />
-                            <PetGrid
-                                ref='pet'
-                            />
-                            <LocateUs
-                                ref='location'
-                            />
-                            <Footer
-                                ref='buy'
-                            />
-                        {/* </Route>
+                <FirstPage func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} ref='start' />
+                <HowItWorks
+                    ref='aboutus'
+                />
+                <PetGrid
+                    ref='pet'
+                />
+                <LocateUs
+                    ref='location'
+                />
+                <Footer
+                    ref='buy'
+                />
+                <div style={{ display:'none' }}>
+                    <Services func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} />
+                </div>
+                {/* </Route>
                     </Switch>
                 </BrowserRouter> */}
             </div>
