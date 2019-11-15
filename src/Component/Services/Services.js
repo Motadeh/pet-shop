@@ -72,50 +72,23 @@ export default class Services extends React.Component {
                         <Grid item xs={12} className='headertext2'>
                             {/* <Paper elevation={0} className={classes.paper}> */}
                             <div className={this.state.headerStyle}>
-                                <a href='#'
-                                    onClick={() => this.props.func[0]()}
-                                >
+                                <Link to="/moyin#home">
                                     <div className='headertexts'>HOME</div>
-                                </a>
-                                <a href='#' onClick={() => this.props.func[1]()}>
+                                </Link>
+
+                                <Link to="/moyin#aboutus">
                                     <div className='headertexts'>ABOUT US</div>
-                                </a>
-                                {/* <a href='#'
-                                        // onClick={() => this.props.func[2]()}
-                                    > */}
+                                </Link>
+
                                 <Link to="/moyin/services" style={styles.link}>
                                     <div className='headertexts'>SERVICES</div>
                                 </Link>
-                                {/* <div className='headertexts'>SERVICES</div> */}
-                                {/* </a> */}
-                                <a href='#' onClick={() => this.props.func[4]()}>
+
+                                <Link to="/moyin#locateus">
                                     <div className='headertexts'>LOCATE US</div>
-                                </a>
-                                {/* <a href='#'
-                                    onClick={() => this.props.func[4]()}
-                                >
-                                    <div className='headertexts'>CONTACT US</div>
-                                </a> */}
-                                {/* <NavLink
-                                    to="/moyin"
-                                    style={styles.link}
-                                    isActive={(match, location) => {
-                                        if (!match) {
-                                            this.props.func[4]()
-                                        }
-                                    }}
-                                >
-                                    <div className='headertexts'>CONTACT US</div>
-                                </NavLink> */}
-                                <Link
-                                    to="/moyin#contact"
-                                    style={styles.link}
-                                    // isActive={(match, location) => {
-                                    //     if (!match) {
-                                    //         this.props.func[4]()
-                                    //     }
-                                    // }}
-                                >
+                                </Link>
+                                
+                                <Link to="/moyin#contact">
                                     <div className='headertexts'>CONTACT US</div>
                                 </Link>
                             </div>

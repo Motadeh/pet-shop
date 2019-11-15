@@ -50,8 +50,8 @@ export default class LocateUs extends React.Component {
 
         return (
             <div
-            // className={classes.root}
-            style={{ paddingBottom: '50px' }}
+                className='locateussss'
+                style={{ paddingBottom: '50px' }}
             >
                 <Grid container>
                     <Grid item xs={12}>

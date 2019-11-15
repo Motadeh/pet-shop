@@ -14,6 +14,7 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import './GeneralPage.css';
 // import FeedBack from './Component/FeedBack/FeedBack';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 class GeneralPage extends React.Component {
 
@@ -22,12 +23,10 @@ class GeneralPage extends React.Component {
     constructor() {
         super();
         this.start = React.createRef();
-        this.scrollStart = this.scrollStart.bind(this)
-    }
-
-    componentDidMount() {
-        // this.start.current.focus()
-        // this.start.current.focusTextInput();
+        this.scrollStart = this.scrollStart.bind(this);
+        this.state = {
+            display: 'none'
+        }
     }
 
     scrollStart = () => {
@@ -58,7 +57,7 @@ class GeneralPage extends React.Component {
     }
 
     scrollLocation = () => {
-        console.log('clicked')
+        console.log('location')
         // this.start.current.focus()
         scrollToComponent(this.refs.location, {
             align: 'top',
@@ -75,13 +74,35 @@ class GeneralPage extends React.Component {
         });
     }
 
+    listenScrollEvent = e => {
+        if (window.scrollY > 400) {
+            console.log('gbese')
+            this.setState({ display: 'block' })
+        } else {
+            this.setState({ color: 'white' })
+        }
+    }
+
+    componentDidMount() {
+        const myId = window.location.hash.slice(1)
+        const elem = document.getElementById(myId)
+        if (myId === 'home') {
+            this.scrollStart()
+        }
+        else if (myId === 'aboutus') {
+            this.scrollAboutUs()
+        }
+        else if (myId === 'locateus') {
+            this.scrollLocation()
+        }
+        else if (myId === 'contact') {
+            this.scrollBuy()
+        }
+
+        window.addEventListener('scroll', this.listenScrollEvent)
+    }
+
     render() {
-        // const scrollStart = () => {
-        //     scrollToComponent(this.refs.start, {
-        //         align: 'top',
-        //         duration: 1000
-        //     });
-        // }
 
         return (
             <div className="App"
@@ -90,21 +111,22 @@ class GeneralPage extends React.Component {
                 {/* <BrowserRouter>
                     <Switch>
                         <Route exact path="/"> */}
-                <FirstPage func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} ref='start' />
+                <div style={{ display: this.state.display }}>
+                    <Header />
+                </div>
+                <FirstPage func={[this.scrollStart, this.scrollAboutUs, this.scrollLocation, this.scrollBuy]} ref='start' />
                 <HowItWorks
                     ref='aboutus'
                 />
-                <PetGrid
-                    ref='pet'
-                />
+                <PetGrid />
                 <LocateUs
                     ref='location'
                 />
                 <Footer
                     ref='buy'
                 />
-                <div style={{ display:'none' }}>
-                    <Services func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} />
+                <div style={{ display: 'none' }}>
+                    <Services />
                 </div>
                 {/* </Route>
                     </Switch>

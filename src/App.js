@@ -22,58 +22,6 @@ class App extends React.Component {
 
     constructor() {
         super();
-        this.start = React.createRef();
-        this.scrollStart = this.scrollStart.bind(this)
-    }
-
-    componentDidMount() {
-        // this.start.current.focus()
-        // this.start.current.focusTextInput();
-    }
-
-    scrollStart = () => {
-        console.log('clicked')
-        // this.start.current.focus()
-        scrollToComponent(this.refs.start, {
-            align: 'top',
-            duration: 1000
-        });
-    }
-
-    scrollAboutUs = () => {
-        console.log('clicked')
-        // this.start.current.focus()
-        scrollToComponent(this.refs.aboutus, {
-            align: 'top',
-            duration: 1000
-        });
-    }
-
-    scrollPet = () => {
-        console.log('clicked')
-        // this.start.current.focus()
-        scrollToComponent(this.refs.pet, {
-            align: 'top',
-            duration: 1000
-        });
-    }
-
-    scrollLocation = () => {
-        console.log('clicked')
-        // this.start.current.focus()
-        scrollToComponent(this.refs.location, {
-            align: 'top',
-            duration: 1000
-        });
-    }
-
-    scrollBuy = () => {
-        console.log('clicked')
-        // this.start.current.focus()
-        scrollToComponent(this.refs.buy, {
-            align: 'top',
-            duration: 1000
-        });
     }
 
     render() {
@@ -97,7 +45,7 @@ class App extends React.Component {
                             <GeneralPage />
                         </Route>
                         <Route exact path="/moyin/services">
-                            <Services func={[this.scrollStart, this.scrollAboutUs, this.scrollPet, this.scrollLocation, this.scrollBuy]} />
+                            <Services />
                         </Route>
                     </Switch>
                 </BrowserRouter>

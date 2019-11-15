@@ -20,10 +20,6 @@
 }
 
 .locateuscities {
-
-}
-
-.locateuscities {
     opacity: 0;
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
@@ -31,7 +27,6 @@
 
 .locateuscities.animated {
     opacity: 1;
-    /* transform: translateY(-4em); */
     transform: translateX(-4vw) ;
     transition: transform .7s,
                 opacity .5s .2s ease-out;

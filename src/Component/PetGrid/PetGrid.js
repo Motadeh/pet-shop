@@ -56,54 +56,56 @@ export default class PetGrid extends React.Component {
             //     // style={{ overflowX: 'hidden' }}
             //     >
             //         <Grid container spacing={3}>
+            <Grid container>
 
-                        <section className="section-meals">
-                            <ul className="meals-showcase clearfix">
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={dogs} alt="dogs" />
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={cats} alt="cats" />
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={rabbit} alt="rabbits" />
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={fish} alt="fish" />
-                                    </figure>
-                                </li>
-                            </ul>
-                            <ul className="meals-showcase clearfix">
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={hare} alt="hare" />
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={parrot} alt="parrot" />
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={cute} alt="cute" />
-                                    </figure>
-                                </li>
-                                <li>
-                                    <figure className="meal-photo">
-                                        <img src={monkey} alt="monkey" />
-                                    </figure>
-                                </li>
-                            </ul>
-                        </section>
-            //         </Grid>
+                <section className="section-meals">
+                    <ul className="meals-showcase clearfix">
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={dogs} alt="dogs" />
+                            </figure>
+                        </li>
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={cats} alt="cats" />
+                            </figure>
+                        </li>
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={rabbit} alt="rabbits" />
+                            </figure>
+                        </li>
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={fish} alt="fish" />
+                            </figure>
+                        </li>
+                    </ul>
+                    <ul className="meals-showcase clearfix">
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={hare} alt="hare" />
+                            </figure>
+                        </li>
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={parrot} alt="parrot" />
+                            </figure>
+                        </li>
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={cute} alt="cute" />
+                            </figure>
+                        </li>
+                        <li>
+                            <figure className="meal-photo">
+                                <img src={monkey} alt="monkey" />
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </Grid>
+
             //     </div>
             // </section>
         );

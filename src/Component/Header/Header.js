@@ -92,15 +92,34 @@ export default class Header extends React.Component {
         //     setValues({ headerStyle: '' });
         // }
 
+        const stickSticky = () => {
+            this.setState({ headerStyle: 'headertext' });
+            // document.getElementById("headertext").style.position = "fixed";
+        }
+
+        const staySticky = (obj) => {
+            // this.setState({
+            //     headerStyle: 'sticky'
+            // })
+            this.setState({ headerStyle: 'sticky' }, console.log(this.state.headerStyle));
+            // if (window.innerWidth > 767 || window.innerWidth > 767) {
+            // document.getElementById("headertext").style.position = "fixed";
+            // }
+            // else {
+            //     document.getElementById("headertext").style.position = "fixed";
+            // }
+            console.log('gbese')
+        }
+
         return (
             // <Waypoint onLeave={staySticky} onEnter={stickSticky} topOffset='60px' >
             <div
-                // className={classes.root}
+                className='sticky'
             >
                 <Grid container spacing={3}>
                     <Grid item xs={12} className='headertext2'>
                         {/* <Paper elevation={0} className={classes.paper}> */}
-                        <div className={this.state.headerStyle}>
+                        <div className='sticky'>
                             <a href='#'
                                 onClick={() => this.props.func[0]()}
                             >
