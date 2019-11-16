@@ -88,13 +88,13 @@ export default class FirstPage extends React.Component {
                     <div
                     // className={classes.root}
                     >
-                        {/* <Grid container spacing={3}>
+                        <Grid container spacing={3}>
                             <Grid item xs={12} className='headertext2'>
                                 <div className={this.state.headerStyle}>
                                     <a href='#' onClick={() => this.props.func[0]()}>
                                         <div className='headertexts'>HOME</div>
                                     </a>
- 
+
                                     <a href='#' onClick={() => this.props.func[1]()}>
                                         <div className='headertexts'>ABOUT US</div>
                                     </a>
@@ -103,16 +103,21 @@ export default class FirstPage extends React.Component {
                                         <div className='headertexts'>SERVICES</div>
                                     </Link>
 
-                                    <a href='#' onClick={() => this.props.func[3]()}>
+                                    {/* <a href='#' onClick={() => this.props.func[2]()}>
                                         <div className='headertexts'>LOCATE US</div>
-                                    </a>
+                                    </a> */}
 
-                                    <a href='#' onClick={() => this.props.func[4]()}>
+                                    <Link to="/moyin#locateus">
+                                        <div className='headertexts'>LOCATE US</div>
+                                    </Link>
+
+
+                                    <a href='#' onClick={() => this.props.func[3]()}>
                                         <div className='headertexts'>CONTACT US</div>
                                     </a>
                                 </div>
                             </Grid>
-                        </Grid> */}
+                        </Grid>
                         {/* <Header func={this.props.func}/> */}
                         <Grid container>
                             <div className='goodbye'>

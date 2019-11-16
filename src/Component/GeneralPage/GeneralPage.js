@@ -75,11 +75,11 @@ class GeneralPage extends React.Component {
     }
 
     listenScrollEvent = e => {
-        if (window.scrollY > 400) {
+        if (window.scrollY > 700) {
             console.log('gbese')
             this.setState({ display: 'block' })
         } else {
-            this.setState({ color: 'white' })
+            this.setState({ display: 'none' })
         }
     }
 
@@ -112,7 +112,7 @@ class GeneralPage extends React.Component {
                     <Switch>
                         <Route exact path="/"> */}
                 <div style={{ display: this.state.display }}>
-                    <Header />
+                    <Header func={[this.scrollStart, this.scrollAboutUs, this.scrollLocation, this.scrollBuy]} />
                 </div>
                 <FirstPage func={[this.scrollStart, this.scrollAboutUs, this.scrollLocation, this.scrollBuy]} ref='start' />
                 <HowItWorks
