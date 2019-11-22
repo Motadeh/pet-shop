@@ -1,3 +1,7 @@
+/* .section-howitworks {
+    background-color: #CCCCCC;
+} */
+
 .howitworks, .howitworks1, .info {
     font-family: Montserrat;
     font-weight: 400;
@@ -15,8 +19,8 @@
     width: 8vw;
     margin-right: auto;
     margin-left: auto;
-    color: #E67E22;
-    border-top: 2px solid #E67E22;
+    color: #b5651e;
+    border-top: 2px solid #b5651e;
     margin-bottom: 20px
 }
 
@@ -64,8 +68,8 @@ section{
 }
   
 .works-step div {
-    color: #e67e22;
-    border: 2px solid #e67e22;
+    color: #b5651e;
+    border: 2px solid #b5651e;
     display: inline-block;
     border-radius: 50%;
     height: 55px;
@@ -73,7 +77,7 @@ section{
     text-align: center;
     padding: 5px;
     padding-top: 5px;
-    float: left;
+    /* float: left; */
     font-size: 150%;
     margin-right: 25px;
 }
@@ -230,8 +234,8 @@ section{
     }
 
     .works-step div {
-        color: #e67e22;
-        border: 2px solid #e67e22;
+        color: #b5651e;
+        border: 2px solid #b5651e;
         display: inline-block;
         border-radius: 50%;
         height: 55px;

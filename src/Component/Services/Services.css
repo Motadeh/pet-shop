@@ -1,18 +1,115 @@
 .services {
-    background-color: grey;
+    /* background-color: #b5651e; */
+    min-height: 100vh;
+    background: linear-gradient(to bottom, 
+    #b5651e, #CCCCCC);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.services1 {
+.servicestest {
     position: relative;
-    top: 10vh;
+    top: 25vh;
+    padding-top: 5vw;
 }
 
-.services2 {
-    position: relative;
-    top: 20vh;
+.words {
+    padding: 2vw;
+    text-align: justify;
+    font-size: 1vw;
 }
 
-.services3 {
+.wordsheader {
+    font-size: 2vw;
+}
+
+.circle, .circle2, .circle3{
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    background-color: green;
+    top: 3.5vw;
+    border-radius: 50%;
+    margin-left: -2vw;
+}
+
+.circle4, .circle5 {
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    background-color: green;
+    top: 3.5vw;
+    border-radius: 50%;
+    margin-left: -2vw;
+}
+
+.footerservice {
     position: relative;
-    top: 30vh;
+    top: 48vh;
+    min-width: 100vw;
+}
+
+@media screen and (max-width: 1440px) {
+    .servicestest {
+        top: 20vw;
+    }
+    .footerservice {
+        position: relative;
+        top: 46vh;
+        min-width: 100vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .servicestest {
+        top: 20vw;
+    }
+    .circle5 {
+        top: 30vw;
+    }
+    .footerservice {
+        position: relative;
+        top: 35vh;
+        min-width: 100vw;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .servicestest {
+        top: 35vw;
+    }
+    .circle4, .circle5 {
+        top: 35vw;
+    }
+    .sidebar {
+        display: flex;
+        align-items: center
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .servicestest {
+        top: 50vw;
+    }
+    .circle4, .circle5 {
+        top: 36vw;
+    }
+    .footerservice {
+        position: relative;
+        top: 85vw;
+    }    
+}
+
+@media screen and (max-width: 320px) {
+    .servicestest {
+        top: 50vw;
+    }
+    .circle4, .circle5 {
+        top: 37.5vw;
+    }
+    .footerservice {
+        position: relative;
+        top: 85vw;
+    }    
 }

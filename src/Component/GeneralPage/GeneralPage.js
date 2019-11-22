@@ -75,7 +75,7 @@ class GeneralPage extends React.Component {
     }
 
     listenScrollEvent = e => {
-        if (window.scrollY > 700) {
+        if (window.scrollY > 500) {
             console.log('gbese')
             this.setState({ display: 'block' })
         } else {

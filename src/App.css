@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -37,10 +37,10 @@ a:link, a:visited {
 
 a:active,
 a:hover{
-  color: #e67e22;
+  color: #b5651e;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid #e67e22;
+  border-bottom: 1px solid #b5651e;
   -webkit-transition: border-bottom 0.2s,color 0.2s;
   transition: border-bottom 0.2s,color 0.2s;
 }
