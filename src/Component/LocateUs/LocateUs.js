@@ -19,15 +19,29 @@ const useStyles = makeStyles(theme => ({
 
 const words = [
     <div className='infos'>
-        <div className='info infoheader'>Vaccination</div>
-        <div className='info infotext'>
-            All pets are properly vaccinated and under the care of a Veterinary Doctor.
-            Pets can still remain under the same doctor after purchase or moved to preferred doctor of buyer.
+        <div className='info infoheader' style={{ fontSize: '1.5vw' }}>Lagos</div>
+        <div className='info infotext' style={{ fontSize: '2vw', paddingTop: '2vw' }}>
+            Block 4, old martial way, Lagos
         </div>
     </div>,
-    'two',
-    'three',
-    'four'
+    <div className='infos'>
+        <div className='info infoheader' style={{ fontSize: '1.5vw' }}>Abuja</div>
+        <div className='info infotext' style={{ fontSize: '2vw', paddingTop: '2vw' }}>
+            4, Abiola way, Abuja
+     </div>
+    </div>,
+    <div className='infos'>
+        <div className='info infoheader' style={{ fontSize: '1.5vw' }}>Jos</div>
+        <div className='info infotext' style={{ fontSize: '2vw', paddingTop: '2vw' }}>
+            25, Secretariat Road, Jos
+     </div>
+    </div>,
+    <div className='infos'>
+        <div className='info infoheader' style={{ fontSize: '1.5vw' }}>Port Harcourt</div>
+        <div className='info infotext' style={{ fontSize: '2vw', paddingTop: '2vw' }}>
+            Block 6, Moyin Road, Port Harcourt
+     </div>
+    </div>
 ]
 
 export default class LocateUs extends React.Component {
@@ -68,7 +82,7 @@ export default class LocateUs extends React.Component {
                         </Paper>
                     </Grid>
 
-                    <Waypoint onEnter={this.animite} bottomOffset="50%">
+                    <Waypoint onEnter={this.animite} bottomOffset="10%">
                         <Grid item xs={12}>
                             <Grid container justify="center" align='center'
                                 style={{

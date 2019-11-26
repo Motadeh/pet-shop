@@ -5,6 +5,7 @@
     padding-right: 4vw;
     color: #808080;
     font-size: 1vw;
+    min-width: 100vw;
 }
 
 .footerlist ul, li{
