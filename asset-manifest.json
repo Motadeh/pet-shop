@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Motadeh/pet-shop/static/css/main.36e4140d.chunk.css",
+    "main.js": "/Motadeh/pet-shop/static/js/main.b48872f4.chunk.js",
+    "main.js.map": "/Motadeh/pet-shop/static/js/main.b48872f4.chunk.js.map",
+    "runtime~main.js": "/Motadeh/pet-shop/static/js/runtime~main.5a2809e0.js",
+    "runtime~main.js.map": "/Motadeh/pet-shop/static/js/runtime~main.5a2809e0.js.map",
+    "static/js/2.a9deaa4b.chunk.js": "/Motadeh/pet-shop/static/js/2.a9deaa4b.chunk.js",
+    "static/js/2.a9deaa4b.chunk.js.map": "/Motadeh/pet-shop/static/js/2.a9deaa4b.chunk.js.map",
+    "index.html": "/Motadeh/pet-shop/index.html",
+    "precache-manifest.bfa9b8b157a8ec9a1e92559ee3baef58.js": "/Motadeh/pet-shop/precache-manifest.bfa9b8b157a8ec9a1e92559ee3baef58.js",
+    "service-worker.js": "/Motadeh/pet-shop/service-worker.js",
+    "static/css/main.36e4140d.chunk.css.map": "/Motadeh/pet-shop/static/css/main.36e4140d.chunk.css.map",
+    "static/media/app-iPhone.png": "/Motadeh/pet-shop/static/media/app-iPhone.2bf4f65e.png",
+    "static/media/dogs.jpg": "/Motadeh/pet-shop/static/media/dogs.210acfb3.jpg",
+    "static/media/download-app.svg": "/Motadeh/pet-shop/static/media/download-app.d0558d91.svg",
+    "static/media/logo.svg": "/Motadeh/pet-shop/static/media/logo.5d5d9eef.svg",
+    "static/media/FirstPage.css": "/Motadeh/pet-shop/static/media/puppy-and-kitten-animal-wallpaper-hd-dog-photos-puppies-pets-lovely-widescreen-windows-wallpapers-of-dogs-mac-1805x1015.2536c1d8.jpeg",
+    "static/media/sitting.jpeg": "/Motadeh/pet-shop/static/media/sitting.07641594.jpeg"
+  }
+}
